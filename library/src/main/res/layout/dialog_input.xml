@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.nightkyb.widgets.KeyboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_transparent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/outside_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/md_transparent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_grey"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_edit"
+            android:hint="@string/id_hint"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLength="500"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_8"
+            android:textSize="@dimen/sp_14"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@drawable/btn_blue_bg_small_corner"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="@string/action_send"
+            android:textColor="@color/md_white"
+            android:textSize="@dimen/sp_16"/>
+
+    </LinearLayout>
+
+</com.github.nightkyb.widgets.KeyboardLayout>

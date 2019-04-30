@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 不可点击背景 -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/colorBtnUnable"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <!-- 点击背景 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/md_blue_700"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <!-- 默认背景 -->
+    <item>
+        <shape>
+            <solid android:color="@color/md_blue_500"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</selector>

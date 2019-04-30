@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--应用背景颜色-->
+    <color name="windowBackground">@color/md_grey_50</color>
+    <!--背景颜色-->
+    <color name="bg_color_grey">@color/md_grey_200</color>
+    <!--背景更深的颜色-->
+    <color name="bg_color_dark_grey">@color/md_grey_400</color>
+
+    <color name="colorBtnUnable">@color/md_black_12</color>
+</resources>
